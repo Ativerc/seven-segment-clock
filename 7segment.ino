@@ -49,7 +49,6 @@ void setup()
 void loop() {
     for (int num = 30; num >= 0; num--){
         double_display(num);
-        delay(1000);
     }
 }
 
@@ -75,7 +74,7 @@ void double_display(int number) {
         digitalWrite(pin, num_array[first_dig][j]);
         pin++;
     }
-    delay(1000);
+    delay(500);
     digitalWrite(10, HIGH);
     pin = 2;
     for (int j=0; j<7; j++){
@@ -83,7 +82,7 @@ void double_display(int number) {
         digitalWrite(pin, num_array[second_dig][j]);
         pin++;
     }
-    delay(1000);
+    delay(500);
     digitalWrite(9,HIGH);
 
 }
